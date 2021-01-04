@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>For QA test</title>
+</head>
+<body>
+<div>
+    <form action="#">
+    <label for="loving">
+        <input id="loving" type="checkbox" name="personality"> Loving
+    </label>
+    <label for="loving2">
+        <input id="loving2" type="checkbox" name="personality"> Loving2
+    </label>
+</div>
+<div>
+    <button name="button">кнопка</button>
+</div>
+<div>
+    <input type="radio" id="radioButton" name="scales">
+    <label for="radioButton">Scales</label>
+    <input type="radio" id="radioButton2" name="scales">
+    <label for="radioButton2">Scales2</label>
+</div>
+<div>
+    <input type="text" name="username" placeholder="введите текст">
+</div>
+<div>
+    <label for="fuel">Fuel level:</label>
+    <meter id="fuel"
+           min="0" max="100"
+           low="33" high="66" optimum="80"
+           value="80">
+        at 80/100
+    </meter>
+</div>
+<div>
+    <input type="range" id="volume" name="volume"
+           min="0" max="11">
+    <label for="volume">Volume</label>
+</div>
+<div>
+    <input type="range" id="cowbell" name="cowbell"
+           min="0" max="100" value="90" step="10">
+    <label for="cowbell">Cowbell</label>
+</div>
+<div>
+    <label>
+        Введите число от 1 до 10:<input id="myinput" type="number" name="number" max="10" min="1" style="width:33px">
+    </label>
+</div>
+<div>
+    <textarea name="comment">Добавьте сюда свой комментарий</textarea>
+</div>
+<div>
+    <select name="day" size="1">
+        <option value="Wednesday" selected>Среда</option>
+        <option value="Thursday" selected>Четверг</option>
+        <option value="Friday" selected>Пятница</option>
+        <option value="Saturday">Суббота</option>
+        <option value="Sunday">Воскресенье</option>
+    </select>
+</div>
+<div>
+    <select name="day" multiple>
+        <option value="Wednesday" selected>Среда</option>
+        <option value="Thursday" selected>Четверг</option>
+        <option value="Friday" selected>Пятница</option>
+        <option value="Saturday">Суббота</option>
+        <option value="Sunday">Воскресенье</option>
+    </select>
+</div>
+<div>
+    <input type="submit" name="submit" value="Отправить">
+</div>
+<div>
+    <!--    скрытое поле-->
+    <input type="hidden" name="tracking-code" value="abc-123">
+</div>
+<div>
+    <input type="file" name="file">
+</div>
+<div>
+    <label>
+        Email
+        <input type="email" name="email-address" placeholder="name@domain.com">
+    </label>
+</div>
+<div>
+    <a href="bootstrap.html">bootstrap</a>
+</div>
+<button>submit</button>
+</form>
+<script>
+    let inp = document.querySelector('#myinput');
+    inp.oninput = e => {
+        let data = e.target.value;
+        console.log(data);
+        if(data > 10 || data < 1){
+            e.target.style.border = '1px solid red';
+        }
+    }
+</script>
+</body>
+</html>

@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.locators.RelativeLocator;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -46,9 +45,9 @@ public class TestRelativeLocator {
         lName.clear();
         lName.sendKeys("LastName");
 
-        WebElement email=wd.findElement(RelativeLocator.withTagName("input").below(lName));
-        email.click();
-        email.sendKeys("21tyyt6@mail.com");
+//        WebElement email=wd.findElement(RelativeLocator.withTagName("input").below(lName));
+//        email.click();
+//        email.sendKeys("21tyyt6@mail.com");
 
         WebElement password =wd.findElement(By.cssSelector("#password"));
         password.click();
@@ -60,9 +59,9 @@ public class TestRelativeLocator {
         cheerBox.click();
         Thread.sleep(2000);
 
-        WebElement policy =wd.findElement(RelativeLocator.withTagName("span").toRightOf(cheerBox).below(password));
+//        WebElement policy =wd.findElement(RelativeLocator.withTagName("span").toRightOf(cheerBox).below(password));
 
-        System.out.println(policy.getText());
+//        System.out.println(policy.getText());
 
         //clickYullaBut
         wd.findElement(By.cssSelector("[type='submit']")).click();
