@@ -7,8 +7,7 @@
         <classes>
             <class name="com.telranqa26.tests.RegistrationTest"/>
             <class name="com.telranqa26.tests.LoginTest"/>
-            <class name="com.telranqa26.tests.CarCreationTest"/>
-            <class name="com.telranqa26.tests.LogoutTest"/>
+            
 
         </classes>
     </test>
