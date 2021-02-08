@@ -1,8 +1,8 @@
 package com.telranqa26.application;
 
+import com.telranqa26.model.Car;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class CarHelper extends HelperBase{
     public CarHelper(WebDriver wd) {
@@ -18,30 +18,29 @@ public class CarHelper extends HelperBase{
         return isElementPresent(By.xpath("//h3[contains(., 'Let the car work')]"));
     }
 
-    public void fillCarForm (String contry, String address, String distance, String serial_number, String brand, String model, String year, String engine, String fuel_consumption, String fuel, String transmition, String wD, String horsepower, String torque, String doors, String seats, String clasS, String about, String feature, String price){
-        //WebElement element= wd.findElement(By.cssSelector("[name='about']"));
+    public void fillCarForm(Car car){
 
-        type(By.cssSelector(".country"), contry);
-        type(By.cssSelector(".address"), address);
-        type(By.cssSelector(".distance_included"), distance);
-        type(By.cssSelector(".serial_number"), serial_number);
-        type(By.cssSelector(".brand"), brand);
-        type(By.cssSelector(".model"), model);
-        type(By.cssSelector(".year"), year);
-        type(By.cssSelector(".engine"), engine);
-        type(By.cssSelector(".fuel_consumption"), fuel_consumption);
-        type(By.cssSelector(".fuel"), fuel);
-        type(By.cssSelector(".transmition"), transmition);
-        type(By.cssSelector(".wd"), wD);
-        type(By.cssSelector(".horsepower"), horsepower);
-        type(By.cssSelector(".torque"), torque);
-        type(By.cssSelector(".doors"), doors);
-        type(By.cssSelector(".seats"), seats);
-        type(By.cssSelector(".class"), clasS);
-        type(By.cssSelector("[name='about']"), about);
+        type(By.cssSelector(".country"), car.getContry());
+        type(By.cssSelector(".address"), car.getAddress());
+        type(By.cssSelector(".distance_included"), car.getDistance());
+        type(By.cssSelector(".serial_number"), car.getSerial_number());
+        type(By.cssSelector(".brand"), car.getBrand());
+        type(By.cssSelector(".model"), car.getModel());
+        type(By.cssSelector(".year"), car.getYear());
+        type(By.cssSelector(".engine"), car.getEngine());
+        type(By.cssSelector(".fuel_consumption"), car.getFuel_consumption());
+        type(By.cssSelector(".fuel"), car.getFuel());
+        type(By.cssSelector(".transmition"), car.getTransmition());
+        type(By.cssSelector(".wd"), car.getwD());
+        type(By.cssSelector(".horsepower"), car.getHorsepower());
+        type(By.cssSelector(".torque"), car.getTorque());
+        type(By.cssSelector(".doors"), car.getDoors());
+        type(By.cssSelector(".seats"), car.getSeats());
+        type(By.cssSelector(".class"), car.getClasS());
+        type(By.cssSelector("[name='about']"), car.getAbout());
         //typeByElement(element,about);
-        type(By.cssSelector(".type_feature"), feature);
-        type(By.cssSelector(".price"), price);
+        type(By.cssSelector(".type_feature"), car.getFeature());
+        type(By.cssSelector(".price"), car.getPrice());
 
 
     }

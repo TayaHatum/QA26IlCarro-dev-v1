@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telranqa26.tests.LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-07T21:41:25" hostname="MBP-Taya.lan" time="1.344">
+  <properties/>
+  <testcase name="testLogin" classname="com.telranqa26.tests.LoginTest" time="1.344"/>
+  <system-out><![CDATA[23:41:15 INFO  - Start test -->testLogin
+23:41:15 INFO  - Start search --->By.xpath: //a[contains(.,'logOut')]
+23:41:25 INFO  - By.xpath: //a[contains(.,'logOut')]<--- found
+23:41:25 INFO  - Start search --->By.cssSelector: [href='/login']
+23:41:25 INFO  - By.cssSelector: [href='/login']<--- found
+23:41:25 INFO  - Start search --->By.cssSelector: [name='email']
+23:41:25 INFO  - By.cssSelector: [name='email']<--- found
+23:41:25 INFO  - Start search --->By.cssSelector: [name='email']
+23:41:25 INFO  - By.cssSelector: [name='email']<--- found
+23:41:25 INFO  - Start search --->By.cssSelector: [name='email']
+23:41:25 INFO  - By.cssSelector: [name='email']<--- found
+23:41:25 INFO  - Start search --->By.cssSelector: [name='password']
+23:41:25 INFO  - By.cssSelector: [name='password']<--- found
+23:41:25 INFO  - Start search --->By.cssSelector: [name='password']
+23:41:25 INFO  - By.cssSelector: [name='password']<--- found
+23:41:25 INFO  - Start search --->By.cssSelector: [name='password']
+23:41:25 INFO  - By.cssSelector: [name='password']<--- found
+23:41:25 INFO  - Start search --->By.cssSelector: [type='submit']
+23:41:25 INFO  - By.cssSelector: [type='submit']<--- found
+23:41:26 INFO  - Start search --->By.cssSelector: [type='submit']
+23:41:26 INFO  - By.cssSelector: [type='submit']<--- found
+23:41:26 INFO  - Start search --->By.xpath: //a[contains(.,'logOut')]
+23:41:26 INFO  - By.xpath: //a[contains(.,'logOut')]<--- found
+23:41:26 INFO  - The end of test -->testLogin
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 2012
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1612734073.397][WARNING]: This version of ChromeDriver has not been tested with Chrome version 88.
+Feb 07, 2021 11:41:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

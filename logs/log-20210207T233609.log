@@ -1,0 +1,36 @@
+23:36:14 INFO  - Start test -->registration
+23:36:14 INFO  - Start search --->By.cssSelector: [href='/signup']
+23:36:14 INFO  - By.cssSelector: [href='/signup']<--- found
+23:36:14 INFO  - Start search --->By.cssSelector: #first_name
+23:36:14 INFO  - By.cssSelector: #first_name<--- found
+23:36:14 INFO  - Start search --->By.cssSelector: #first_name
+23:36:14 INFO  - By.cssSelector: #first_name<--- found
+23:36:14 INFO  - Start search --->By.cssSelector: #first_name
+23:36:14 INFO  - By.cssSelector: #first_name<--- found
+23:36:14 INFO  - Start search --->By.cssSelector: #second_name
+23:36:14 INFO  - By.cssSelector: #second_name<--- found
+23:36:14 INFO  - Start search --->By.cssSelector: #second_name
+23:36:14 INFO  - By.cssSelector: #second_name<--- found
+23:36:14 INFO  - Start search --->By.cssSelector: #second_name
+23:36:14 INFO  - By.cssSelector: #second_name<--- found
+23:36:14 INFO  - Start search --->By.cssSelector: #email
+23:36:14 INFO  - By.cssSelector: #email<--- found
+23:36:14 INFO  - Start search --->By.cssSelector: #email
+23:36:14 INFO  - By.cssSelector: #email<--- found
+23:36:14 INFO  - Start search --->By.cssSelector: #email
+23:36:14 INFO  - By.cssSelector: #email<--- found
+23:36:14 INFO  - Start search --->By.cssSelector: #password
+23:36:14 INFO  - By.cssSelector: #password<--- found
+23:36:15 INFO  - Start search --->By.cssSelector: #password
+23:36:15 INFO  - By.cssSelector: #password<--- found
+23:36:15 INFO  - Start search --->By.cssSelector: #password
+23:36:15 INFO  - By.cssSelector: #password<--- found
+23:36:15 INFO  - Start search --->By.cssSelector: #check_policy
+23:36:15 INFO  - By.cssSelector: #check_policy<--- found
+23:36:15 INFO  - Start search --->By.cssSelector: [type='submit']
+23:36:15 INFO  - By.cssSelector: [type='submit']<--- found
+23:36:15 INFO  - Start search --->By.cssSelector: [type='submit']
+23:36:15 INFO  - By.cssSelector: [type='submit']<--- found
+23:36:15 INFO  - Start search --->By.xpath: //h2[text()='Log in']
+23:36:15 INFO  - By.xpath: //h2[text()='Log in']<--- found
+23:36:15 INFO  - The end of test -->registration

@@ -1,48 +1,24 @@
 package com.telranqa26.tests;
 
+import com.telranqa26.model.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class RegistrationTest extends TestBase{
+public class RegistrationTest extends TestBase {
+
 
     @Test
-    public void registrationTest() throws InterruptedException {
+    public void registration()  {
 
         app.getUserHelper().openRegForm();
-        String email =  "my." + System.currentTimeMillis() + "@gmail.com";
-        System.out.println(email);
-        app.getUserHelper().fillRegForm("Lola", "Lol", email, "Lol12345");
+        String email = "mon.email" + System.currentTimeMillis()/1000%3600 + "@gmail.com";
+
+        System.out.println("Registration eith email --> " +email);
+        app.getUserHelper().fillRegForm(new User().withfName("Mona").withlName("Mon").
+                withEmail(email).withPassword("TestMon12345"));
         app.getUserHelper().selectCheckBox();
-        app.getUserHelper().pause(3000);
         app.getUserHelper().clickYallaButton();
-        app.getUserHelper().pause(2000);
-        Assert.assertFalse(app.getUserHelper().isRegistrationFormPresent());
-
-    }
-    @Test
-    public void registrationTest2() throws InterruptedException {
-
-        app.getUserHelper().openRegForm();
-        String email =  "don.email" + System.currentTimeMillis() + "@gmail.com";
-        app.getUserHelper().fillRegForm("Dina", "Don", "email", "TestDon12345");
-        app.getUserHelper().selectCheckBox();
-        app.getUserHelper().pause(3000);
-        app.getUserHelper().clickYallaButton();
-        app.getUserHelper().pause(2000);
-        Assert.assertFalse(app.getUserHelper().isRegistrationFormPresent());
-
-    }
-    @Test
-    public void registrationTestNegative() throws InterruptedException {
-
-        app.getUserHelper().openRegForm();
-        String email =  "mon.email" + System.currentTimeMillis() + "@gmail.com";
-        app.getUserHelper().fillRegForm("Mona", "Mon", email, "Mona1");
-        app.getUserHelper().selectCheckBox();
-        app.getUserHelper().pause(3000);
-        app.getUserHelper().clickYallaButton();
-        app.getUserHelper().pause(2000);
-        Assert.assertTrue(app.getUserHelper().isRegistrationFormPresent());
+        Assert.assertTrue(app.getUserHelper().isLoginTitlePresent());
 
     }
 

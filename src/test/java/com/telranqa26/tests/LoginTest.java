@@ -1,5 +1,6 @@
 package com.telranqa26.tests;
 
+import com.telranqa26.model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -17,11 +18,12 @@ public class LoginTest extends TestBase {
     }
 
     @Test
-    public void testLogin() throws InterruptedException {
+    public void testLogin()  {
 
         app.getUserHelper().clickLoginButton();
-        app.getUserHelper().fillLoginForm("my.1609162132228@gmail.com", "Lol12345");
-        app.getUserHelper().pause(2000);
+        app.getUserHelper().fillLoginForm(new User()
+                .withEmail(app.setEmail()).withPassword(app.setPassword()));
+
         app.getUserHelper().clickYallaButton();
 
         Assert.assertTrue(app.getUserHelper().isUserLoggedIn());

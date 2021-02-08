@@ -1,0 +1,36 @@
+23:19:48 INFO  - Start test -->registration
+23:19:48 INFO  - Start search --->By.cssSelector: [href='/signup']
+23:19:48 INFO  - By.cssSelector: [href='/signup']<--- foud
+23:19:48 INFO  - Start search --->By.cssSelector: #first_name
+23:19:48 INFO  - By.cssSelector: #first_name<--- foud
+23:19:48 INFO  - Start search --->By.cssSelector: #first_name
+23:19:48 INFO  - By.cssSelector: #first_name<--- foud
+23:19:48 INFO  - Start search --->By.cssSelector: #first_name
+23:19:48 INFO  - By.cssSelector: #first_name<--- foud
+23:19:48 INFO  - Start search --->By.cssSelector: #second_name
+23:19:48 INFO  - By.cssSelector: #second_name<--- foud
+23:19:49 INFO  - Start search --->By.cssSelector: #second_name
+23:19:49 INFO  - By.cssSelector: #second_name<--- foud
+23:19:49 INFO  - Start search --->By.cssSelector: #second_name
+23:19:49 INFO  - By.cssSelector: #second_name<--- foud
+23:19:49 INFO  - Start search --->By.cssSelector: #email
+23:19:49 INFO  - By.cssSelector: #email<--- foud
+23:19:49 INFO  - Start search --->By.cssSelector: #email
+23:19:49 INFO  - By.cssSelector: #email<--- foud
+23:19:49 INFO  - Start search --->By.cssSelector: #email
+23:19:49 INFO  - By.cssSelector: #email<--- foud
+23:19:49 INFO  - Start search --->By.cssSelector: #password
+23:19:49 INFO  - By.cssSelector: #password<--- foud
+23:19:49 INFO  - Start search --->By.cssSelector: #password
+23:19:49 INFO  - By.cssSelector: #password<--- foud
+23:19:49 INFO  - Start search --->By.cssSelector: #password
+23:19:49 INFO  - By.cssSelector: #password<--- foud
+23:19:49 INFO  - Start search --->By.cssSelector: #check_policy
+23:19:49 INFO  - By.cssSelector: #check_policy<--- foud
+23:19:49 INFO  - Start search --->By.cssSelector: [type='submit']
+23:19:49 INFO  - By.cssSelector: [type='submit']<--- foud
+23:19:49 INFO  - Start search --->By.cssSelector: [type='submit']
+23:19:49 INFO  - By.cssSelector: [type='submit']<--- foud
+23:19:49 INFO  - Start search --->By.xpath: //h2[text()='Log in']
+23:19:50 INFO  - By.xpath: //h2[text()='Log in']<--- foud
+23:19:50 INFO  - The end of test -->registration

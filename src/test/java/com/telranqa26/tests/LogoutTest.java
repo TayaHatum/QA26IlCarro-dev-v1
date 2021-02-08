@@ -5,12 +5,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LogoutTest extends TestBase{
-    public LogoutTest() {
-        System.out.println("Im  test logout");
-    }
 
     @BeforeMethod
-    public void ensurePrecondition() throws InterruptedException {
+    public void ensurePrecondition()  {
         if(!app.getUserHelper().isUserLoggedIn()){
             app.getUserHelper().login();
 
@@ -19,7 +16,7 @@ public class LogoutTest extends TestBase{
     }
 
     @Test
-    public void logOutTest() throws InterruptedException {
+    public void logOutTest()  {
 
 
         app.getUserHelper().clickLogOutButton();
