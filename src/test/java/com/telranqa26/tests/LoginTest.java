@@ -17,7 +17,7 @@ public class LoginTest extends TestBase {
         }
     }
 
-    @Test
+    @Test(priority = 1)
     public void testLogin()  {
 
         app.getUserHelper().clickLoginButton();

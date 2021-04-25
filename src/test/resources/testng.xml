@@ -7,7 +7,7 @@
         <classes>
             <class name="com.telranqa26.tests.RegistrationTest"/>
             <class name="com.telranqa26.tests.LoginTest"/>
-            
+
 
         </classes>
     </test>
